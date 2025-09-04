@@ -98,9 +98,9 @@ python manage.py test
 
 - **Memory-Efficient Parsing**: The `import` command processes large files line-by-line using Python generators (`yield`). To ensures small, constant memory footprint, allowing it to handle large files.
 
-- **High-Throughput Ingestion**: It uses Django's `bulk_create()` to insert data in large batches (10,000 records at a time). This minimizes database round-trips.
+- **High-Throughput Ingestion**: It uses Django's `bulk_create()` to insert data in large batches (20k records at a time). This minimizes database round-trips.
 
-- **Extensible Parser Design (Strategy & Factory)**: The project uses the Strategy and Factory patterns to support different file formats (`.csv`, `.json`, `.xml`). A factory selects the appropriate parser based on the file extension. This makes it easy to add new formats without modifying the core import logic.
+- **Extensible Parser Design (Strategy & Factory)**: The project uses the Strategy and Factory patterns to support different file formats (`.csv`, `.json`, `.xml`). A factory selects the appropriate parser based on the file extension. To make it easier to extend more file formats.
 
 - **Data Integrity**: Each file is imported within an atomic transaction (`transaction.atomic()`) to either all the data from a file is imported successfully, or none of it is, preventing partial or corrupt data.
 
