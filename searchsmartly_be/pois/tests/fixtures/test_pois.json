@@ -1,0 +1,24 @@
+[
+    {
+        "id": "poi-1",
+        "name": "Test POI 1",
+        "coordinates": {
+            "latitude": 10.0,
+            "longitude": 20.0
+        },
+        "category": "Test Category 1",
+        "ratings": [1, 2, 3],
+        "description": "Description for POI 1"
+    },
+    {
+        "id": "poi-2",
+        "name": "Test POI 2",
+        "coordinates": {
+            "latitude": 30.0,
+            "longitude": 40.0
+        },
+        "category": "Test Category 2",
+        "ratings": [4, 5],
+        "description": "Description for POI 2"
+    }
+]

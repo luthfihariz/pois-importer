@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+    <DATA_RECORD>
+        <pid>poi-3</pid>
+        <pname>Test POI 3</pname>
+        <platitude>50.0</platitude>
+        <plongitude>60.0</plongitude>
+        <pcategory>Test Category 3</pcategory>
+        <pratings>3,4,5</pratings>
+    </DATA_RECORD>
+    <DATA_RECORD>
+        <pid>poi-4</pid>
+        <pname>Test POI 4</pname>
+        <platitude>70.0</platitude>
+        <plongitude>80.0</plongitude>
+        <pcategory>Test Category 4</pcategory>
+        <pratings>1,5</pratings>
+    </DATA_RECORD>
+</DATA>
