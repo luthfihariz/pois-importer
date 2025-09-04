@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: searchsmartly_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: searchsmartly
+      POSTGRES_USER: searchsmartly_user
+      POSTGRES_PASSWORD: searchsmartly_pass
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
