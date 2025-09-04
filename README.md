@@ -67,7 +67,7 @@ The application will be running at `http://127.0.0.1:8000/`. You can access the 
 
 ## Import Data
 
-The project includes a management command to import PoI data from JSON and XML files. The sample data files are located in the `searchsmartly_be/data` directory. The CSV file is excluded because it's too big.
+The project includes a management command to import PoI data from CSV, JSON and XML files. The sample data files are located in the `searchsmartly_be/data` directory, the CSV file is excluded from the repo because too big.
 
 To import the data, run the `import` command, followed by the paths to the files you want to import. You can specify one or more files at once.
 
